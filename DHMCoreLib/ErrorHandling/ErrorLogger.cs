@@ -52,6 +52,8 @@ namespace HowLeakyModels.DHMCoreLib.ErrorHandling
                     //db.ErrorLogs.Add(record);
                     db.SaveChanges();
 
+
+
                     // SaveToLogFile(LogText);
                     //if (ShowToUser)
                     //    MessageBox.Show(LogText, "An error has occurred", MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.OK);
