@@ -9,9 +9,9 @@ namespace HowLeaky.DataModels
 {
     public class ClimateDataModel : DataModel
     {//
-        public String StationCode { get; set; }
+        public String StationCode { get; set; }//
 
-        public string Country { get; set; }
+        public string Country { get; set; }//{}//
         public String State { get; set; }
 
         public float Latitude { get; set; }
