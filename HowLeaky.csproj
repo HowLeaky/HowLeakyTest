@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6F1090FA-62DA-48A4-BA27-87A3D66441FF}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{94003B83-A791-4739-894F-6ED6540ADDA2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HowLeaky</RootNamespace>
     <AssemblyName>HowLeaky</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,58 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\HowLeakyWeb\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -90,42 +43,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Analysis\AnalysisModel.cs" />
-    <Compile Include="Analytics\AnalyticsErrorRecord.cs" />
-    <Compile Include="ApplicationDbContext\ApplicationDbContext.cs" />
-    <Compile Include="BatchProcessor.cs" />
-    <Compile Include="ClimateDataModel.cs" />
-    <Compile Include="CMS\Cms.cs" />
-    <Compile Include="CoverVeg.cs" />
-    <Compile Include="CustomVeg.cs" />
-    <Compile Include="DHMCoreLib\ErrorHandling\ErrorLogger.cs" />
-    <Compile Include="DHMCoreLib\Helpers\DateUtilities.cs" />
-    <Compile Include="LAIVeg.cs" />
-    <Compile Include="Parameters\ParameterModel.cs" />
-    <Compile Include="Parameters\ParameterModelElement.cs" />
-    <Compile Include="Pesticide.cs" />
+    <Compile Include="CustomAttributes\Input.cs" />
+    <Compile Include="CustomAttributes\Internal.cs" />
+    <Compile Include="CustomAttributes\Output.cs" />
+    <Compile Include="DataModels\ClimateDataModel.cs" />
+    <Compile Include="DataModels\Cover\CoverVegModel.cs" />
+    <Compile Include="DataModels\Cover\LAIVegModel.cs" />
+    <Compile Include="DataModels\Cover\VegModel.cs" />
+    <Compile Include="DataModels\SolutesDataModel.cs" />
+    <Compile Include="DataModels\Tillage\TillageDataModel.cs" />
+    <Compile Include="DataModels\NitrateDataModel.cs" />
+    <Compile Include="DataModels\IrrigationDataModel.cs" />
+    <Compile Include="DataModels\Pesticide\PesticideDataModel.cs" />
+    <Compile Include="DataModels\PhosphorusDataModel.cs" />
+    <Compile Include="DataModels\SoilDataModel.cs" />
+    <Compile Include="Interfaces\IController.cs" />
+    <Compile Include="Interfaces\IDataModel.cs" />
+    <Compile Include="CustomAttributes\Unit.cs" />
+    <Compile Include="ModelControllers\BaseController.cs" />
+    <Compile Include="ModelControllers\ModelOptionsController.cs" />
+    <Compile Include="ModelControllers\SolutesController.cs" />
+    <Compile Include="ModelControllers\TillageController.cs" />
+    <Compile Include="ModelControllers\PesticideController.cs" />
+    <Compile Include="ModelControllers\SoilController.cs" />
+    <Compile Include="ModelControllers\VegetationController.cs" />
+    <Compile Include="ModelControllers\NitrateController.cs" />
+    <Compile Include="ModelControllers\PhosphorusController.cs" />
+    <Compile Include="ModelControllers\IrrigationController.cs" />
+    <Compile Include="ModelControllers\ClimateController.cs" />
+    <Compile Include="ParameterModels\ParameterModelElement.cs" />
+    <Compile Include="SyncModels\CustomSyncModel.cs" />
+    <Compile Include="DataModels\DataModel.cs" />
+    <Compile Include="ErrorLogger\ErrorLogger.cs" />
+    <Compile Include="ParameterModels\ParameterModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Project\Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimulationEngine.cs" />
-    <Compile Include="SoilModel.cs" />
-    <Compile Include="Tillage.cs" />
-    <Compile Include="Tools.cs" />
-    <Compile Include="UserAccounts\ApplicationUser.cs" />
-    <Compile Include="UserAccounts\ChangeRecord.cs" />
-    <Compile Include="UserAccounts\ShortGuid.cs" />
-    <Compile Include="VegModel.cs" />
-    <Compile Include="Website\Links\LinksRecord.cs" />
-    <Compile Include="Website\News\NewsItem.cs" />
-    <Compile Include="Website\News\NewsItemComment.cs" />
-    <Compile Include="Website\News\NewsItemTag.cs" />
-    <Compile Include="Website\Version\VersionRecord.cs" />
-    <Compile Include="_Custom\CustomModel.cs" />
-    <Compile Include="_Custom\CustomSyncModel.cs" />
-    <Compile Include="_Custom\CustomUserRecord.cs" />
+    <Compile Include="Simulation\Simulation.cs" />
+    <Compile Include="Tools\DataObjects\DayMonthData.cs" />
+    <Compile Include="Tools\DataObjects\OutputParameter.cs" />
+    <Compile Include="Tools\DataObjects\ProfileData.cs" />
+    <Compile Include="Tools\DataObjects\Sequence.cs" />
+    <Compile Include="Tools\DataObjects\TimeSeriesData.cs" />
+    <Compile Include="Tools\Math\Math.cs" />
+    <Compile Include="Tools\CSV\CsvParser.cs" />
+    <Compile Include="Tools\Dates\DateUtilities.cs" />
+    <Compile Include="Tools\Serialiser\Serialiser.cs" />
+    <Compile Include="XmlObjects\IndexData.cs" />
+    <Compile Include="XmlObjects\StateData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
