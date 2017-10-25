@@ -21,7 +21,10 @@ namespace HowLeakyModels.AppData
             Id = Guid.NewGuid();
             FileName = filename;
             ImportedBy = appUser.UserName;
-            ImportedDate = DateTime.UtcNow;           
+            ImportedDate = DateTime.UtcNow;   
+
+
+			
         }
         
         [Required]
