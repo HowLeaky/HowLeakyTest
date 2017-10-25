@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace HowLeaky.DataModels
 {
     public class ClimateDataModel : DataModel
-    {
+    {//
         public String StationCode { get; set; }
 
         public string Country { get; set; }
