@@ -19,7 +19,7 @@ namespace HowLeaky.DataModels
     {
         //Input Parameters
         //Xml Elements
-        [Unit("mg_per_kg")]
+        [Unit("mg_per_kg")]//
         public double TotalPConc { get; set; }                          // The total P content of the soil (extracted with hot acid)
         [Unit("mg_per_kg")]
         public double ColwellP { get; set; }                            // The amount of easily-extracted P in the topsoil (0-10 cm, extracted with bicarbonate).
